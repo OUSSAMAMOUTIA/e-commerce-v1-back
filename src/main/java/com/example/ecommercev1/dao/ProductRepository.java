@@ -21,4 +21,6 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     public List<Product> findByPromotionIsTrue();
     @RestResource(path = "/dispoproduct")
     public List<Product> findByAvailableIsTrue();
+
+
 }
